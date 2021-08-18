@@ -1,7 +1,5 @@
 title: RSSPAPER
-# Options: light or dark
 theme: light
-# Options: daily, yesterday, weekly or all
 edition: weekly
 feeds:
   - https://github.com/clockworkpi/launcher/releases.atom
