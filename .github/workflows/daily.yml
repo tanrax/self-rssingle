@@ -14,9 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Prepare repository
-      run: |
-        git pull origin master
     - name: Download RSSPAPER
       run: |
         sudo apt install wget
@@ -34,5 +31,5 @@ jobs:
         git add docs/index.html
         git add docs/static/
         git commit -m "$(date +"%F")"
-        git push origin origin/master
+        git push -f origin master
 
