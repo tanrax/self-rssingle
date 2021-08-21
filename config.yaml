@@ -2,6 +2,7 @@ title: RSSPAPER
 theme: light
 edition: weekly
 feeds:
+  - https://laylacodes.hashnode.dev/rss.xml
   - https://github.com/clockworkpi/launcher/releases.atom
   - https://programadorwebvalencia.com/feed/index.xml
   - http://planet.es.python.org/rss.xml
