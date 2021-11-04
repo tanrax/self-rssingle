@@ -3,6 +3,7 @@ theme: dark
 edition: weekly
 feeds:
   - https://laylacodes.hashnode.dev/rss.xml
+  - https://lucumr.pocoo.org/feed.atom
   - https://github.com/clockworkpi/launcher/releases.atom
   - https://programadorwebvalencia.com/feed/index.xml
   - http://planet.es.python.org/rss.xml
