@@ -8,6 +8,7 @@ feeds:
   - https://programadorwebvalencia.com/feed/index.xml
   - http://planet.es.python.org/rss.xml
   - https://diarioestoico.com/feed/
+  - https://republicaweb.es/feed/
   - https://republicaweb.es/feed/podcast
   - https://static.fsf.org/fsforg/rss/news.xml
   - https://www.djangoproject.com/rss/weblog/
@@ -81,7 +82,6 @@ feeds:
   - https://www.freecodecamp.org/espanol/news/rss/
   - https://www.freecodecamp.org/news/rss/
   - https://www.evercade.co.uk/feed/
-  - https://republicaweb.es/feed/podcast
   - https://erick.navarro.io/index.xml
   - https://blog.elhacker.net/feeds/posts/default
   - http://au-agenda.com/feed/
