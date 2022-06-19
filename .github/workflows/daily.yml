@@ -15,12 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Download RSSingle
-      run: |
-        curl -o rssingle https://github.com/tanrax/RSSingle/releases/download/v1.0.0/rssingle
-	chmod +x rssingle
+      run: curl -o rssingle https://github.com/tanrax/RSSingle/releases/download/v1.0.0/rssingle
+    - name: Add permissons
+      run: chmod +x rssingle
     - name: Run
-      run: |
-        ./rssingle
+      run: ./rssingle
     - name: Upload new dist
       run: |
         rm -rf docs/index.xml
