@@ -5,7 +5,7 @@ on:
     branches:
     - master
   schedule:
-    - cron: "21 3 * * *"
+    - cron: "22 3 * * *"
 
 jobs:
   build:
@@ -14,22 +14,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Download RSSPAPER
+    - name: Download RSSingle
       run: |
-        sudo apt install wget
-        wget https://github.com/tanrax/RSSPAPER/releases/download/v1.2.4/rsspaper-1.2.4-standalone.jar
-    - name: Build
+        curl -o rssingle https://github.com/tanrax/RSSingle/releases/download/v1.0.0/rssingle
+	chmod +x rssingle
+    - name: Run
       run: |
-        java -jar rsspaper-1.2.4-standalone.jar
+        ./rssingle
     - name: Upload new dist
       run: |
-        rm -rf docs/index.html docs/static
-        mv dist/index.html docs
-        mv dist/static docs/
+        rm -rf docs/index.xml
+        mv index.xml docs
         git config user.email "action@github.com"
         git config user.name "GitHub Action"
-        git add docs/index.html
-        git add docs/static/
+        git add docs/index.xml
         git commit -m "$(date +"%F")"
         git push -f origin master
 

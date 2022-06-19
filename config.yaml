@@ -1,6 +1,7 @@
-title: RSSPAPER
-theme: dark
-edition: weekly
+title: Andros RSS
+description: My customised RSS feed
+url: https://rss.andros.dev
+output: index.xml
 feeds:
   - https://laylacodes.hashnode.dev/rss.xml
   - https://lucumr.pocoo.org/feed.atom
