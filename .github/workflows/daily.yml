@@ -19,7 +19,9 @@ jobs:
     - name: Add permissons
       run: chmod +x rssingle
     - name: Run
-      run: ./rssingle
+      run: |
+        apt-get install -y -q build-essential libssl-dev
+        ./rssingle
     - name: Upload new dist
       run: |
         rm -rf docs/index.xml
