@@ -1,6 +1,7 @@
 title: Andros RSS
 description: My customised RSS feed
 url: https://rss.andros.dev
+max entries: 5 # Delete this line to get all
 output: index.xml
 feeds:
   - https://laylacodes.hashnode.dev/rss.xml
